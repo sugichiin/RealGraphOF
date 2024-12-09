@@ -1,9 +1,9 @@
 # RealGraphOF
 ## EXPERIMENTS
   
-In this section, we validate the effectiveness of RealGraphOF by answering the following evaluation questions (EQs):  
+In this section, We aimed to answer the following evaluation questions (EQs):  
  - EQ1[^eq1]: Does the idea of RealGraphOF improve the performance?  
- - EQ2[^eq2]: How much does RealGraphOF provide better performance than naiveRealGraphOF?  
+ - EQ2[^eq1]: How much does RealGraphOF provide better performance than naive-RealGraphOF?  
  - EQ3[^eq3]: Does RealGraphOF outperform other single-machine-based graph engines equipped with NVMe-oF in a naive way?  
  - EQ4[^eq4]: Does RealGraphOF outperform other distributed-system-based graph engines?  
 
