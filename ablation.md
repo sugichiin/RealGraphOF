@@ -17,5 +17,5 @@ We compare the final performances (i.e., execution times) of three versions of R
 We conducted experiments with graph algorithms and datasets mentioned in Section 4.
 Figure below shows the results.
 We observe the execution times of `RGOF` are much smaller than those of the others in all cases.
-Specifically, `RGOF` provides performance about 138\% on average and up to 330\% higher than `naive-RGOF` which is comparable to that of {\rgf}.
+Specifically, `RGOF` provides performance about 138\% on average and up to 330\% higher than `naive-RGOF` which is comparable to that of `orgRG`.
 Note that `RGOF` can process the large graph data that `orgRG` could not process due to out-of-storage (i.e., O.O.S), by employing NVMe-oF;
