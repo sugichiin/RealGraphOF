@@ -1,8 +1,8 @@
 # EQ1. Ablation study.
 
-We (1) verify the effectiveness of our optimization strategies employed in RealGraphOF (i.e., local storage caching `(LSC)` and U-IO/A-IO `(UA)`) and (2) show the superiority of RealGraphOF `(RGOF, in short)` over naive-RealGraphOF `(naive-RGOF, in short)` in terms of IO-BW and execution time.
+We (1) verify the effectiveness of our optimization strategies employed in RealGraphOF (i.e., local storage caching (`LSC`) and U-IO/A-IO (`UA`)) and (2) show the superiority of RealGraphOF (`RGOF`, in short) over naive-RealGraphOF (`naive-RGOF`, in short) in terms of IO-BW and execution time.
 We use U-IO and A-IO simultaneously because they are implemented together by using SPDK and POS.
-We perform graph algorithms and measure their IO-BW and execution time on the Yahoo dataset with four versions of `RGOF`: `RGOF` with no strategies `(naive-RGOF)`, LSC only `(RGOF-LSC)`, UA only `(RGOF-UA)`, and all of them `(RGOF-All)`.
+We perform graph algorithms and measure their IO-BW and execution time on the Yahoo dataset with four versions of `RGOF`: `RGOF` with no strategies (`naive-RGOF`), LSC only (`RGOF-LSC`), UA only (`RGOF-UA`), and all of them (`RGOF-All`).
 
 Figure below shows the results.
 Compared to `naive-RGOF`, UA improves the performance about 169\%/153\% in IO-BW/execution time.
@@ -13,7 +13,7 @@ We can summarize our findings as follows: both of our optimization strategies ar
 
 # EQ2. Comparison of the RealGraph family.
 
-We compare the final performances (i.e., execution times) of three versions of RealGraph: original RealGraph `(orgRG, in short)`, `naive-RGOF`, and `RGOF`.
+We compare the final performances (i.e., execution times) of three versions of RealGraph: original RealGraph (`orgRG`, in short), `naive-RGOF`, and `RGOF`.
 We conducted experiments with graph algorithms and datasets mentioned in Section 4.
 Figure below shows the results.
 We observe the execution times of `RGOF` are much smaller than those of the others in all cases.
