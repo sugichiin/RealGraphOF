@@ -13,7 +13,7 @@ We can summarize our findings as follows: both of our optimization strategies ar
 
 # EQ2. Comparison of the RealGraph family.
 
-We compare the final performances (i.e., execution times) of three versions of RealGraph: original RealGraph (`orgRG`, in short), `naive-RGOF`, and `RGOF`.
+We compare the final performances (i.e., execution times) of three versions of RealGraph: `RGOF`, `naive-RGOF`, and original RealGraph (`orgRG`, in short).
 We conducted experiments with graph algorithms and datasets mentioned in Section 4.
 Figure below shows the results.
 We observe the execution times of `RGOF` are much smaller than those of the others in all cases.
