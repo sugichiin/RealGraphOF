@@ -1,5 +1,5 @@
 # RealGraphOF
-## EXPERIMENTS
+## EVALUATION
   
 In this section, We aimed to answer the following evaluation questions (EQs):  
  - EQ1[^eq1]: Does the idea of RealGraphOF improve the performance?  
