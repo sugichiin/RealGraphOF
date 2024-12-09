@@ -6,11 +6,12 @@ We note that TurboGraph does not perform WCC on the Wiki and UK datasets (i.e., 
 We observe that {\m} provides the performance much better than the existing graph engines, especially, by up to 69$\times$ better than TurboGraph, the best performer among existing graph engines.
 
 
-\textbf{EQ2. Comparison of the RealGraph family.}
-We compare the final performances (i.e., execution times) of three versions of RealGraph: {\rgf}, naive-{\mf}, and {\mf}.
-We conducted experiments with graph algorithms and datasets mentioned in Section~\ref{sec:eval_setup}.
-Figure~\ref{fig:perf_vs_RealGraph} shows the results with BFS and PR due to space limitations.
-We observe the execution times of {\mf} are much smaller than those of the others in all cases.
-Specifically, {\mf} provides performance about 138\% on average and up to 330\% higher than naive-{\mf} which is comparable to that of {\rgf}.
-%109.4\% 137.62\% and 202.72\% 329.52\%
-Note that {\mf} can process the large graph data that {\rgf} could not process due to out-of-storage (i.e., O.O.S), by employing NVMe-oF;
+\textbf{EQ3. Comparison with single-machine-based graph engines.}
+We compare {\mf} with 5 state-of-the-art single-machine-based graph engines on remote storage, GraphChi~\cite{Kyr12}, X-Stream~\cite{Roy13}, GridGraph~\cite{Zhu15}, TurboGraph~\cite{Han13}, and FlashGraph~\cite{Zhe15}.
+%Here, we quote the results of TurboGraph with local storage from the previous paper~\cite{Jan23}, because we have the SMRC servers with Linux OS only while TurboGraph runs on Windows OS.
+We employed BFS, PR, and WCC algorithms, which are \textit{commonly provided} by \textit{all} these graph engines.
+Figure~\ref{fig:perf_vs_Others} shows the results on the Friend and Yahoo datasets, where "O.O.M" and "O.O.T" denote the cases of out-of-memory and out-of-time (i.e., exceeding 24 hours).
+We observe that {\mf} dramatically outperforms all existing graph engines, by up to \textcolor{red}{$22.8\times$/$7.9\times$} better than TurboGraph/FlashGraph which are the best performers among competitors.
+%This is because {\mf} substantially improves its IO processing while maintaining the excellent workload balancing capability of the original RealGraph, and two optimization strategies improved the performance successfully when using remote storage.
+The results on other datasets (i.e., Wiki, UK, Twitter, SK) and another algorithm (i.e., PR) are provided outside via an external link\footnote{https://github.com/sugichiin/RealGraphOF/blob/main/singlemachine\_compare.md}.
+
