@@ -6,3 +6,7 @@ We employed BFS, PR, and WCC algorithms, which are commonly provided by all thes
 Figure below shows the results on the real-world datasets, where `O.O.M` and `O.O.T` denote the cases of out-of-memory and out-of-time (i.e., exceeding 24 hours).
 We note that TurboGraph does not perform WCC on the Wiki and UK datasets (i.e., infeasible).
 We observe that RGOF dramatically outperforms all existing graph engines, by up to \textcolor{red}{$22.8\times$/$7.9\times$} better than TurboGraph/FlashGraph which are the best performers among competitors.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3c9c6eeb-eb3d-439e-9b31-2ecedc0d68ab" />
+</p>
