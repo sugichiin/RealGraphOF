@@ -21,5 +21,5 @@ Specifically, `RGOF` provides performance about 138\% on average and up to 330\%
 Note that `RGOF` can process the large graph data that `orgRG` could not process due to out-of-storage (i.e., `O.O.S`), by employing NVMe-oF;
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3373b4d1-7389-4392-b19d-5c5c4aaed98f.png" />
+  <img src="https://github.com/user-attachments/assets/3373b4d1-7389-4392-b19d-5c5c4aaed98f" />
 </p>
